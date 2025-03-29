@@ -31,4 +31,4 @@ while (j < arr2.length) {
   k++;
 }
 
-console.log(temp);
+
