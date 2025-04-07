@@ -1,0 +1,19 @@
+let myMap = new Map();
+myMap.set("name", "kanak");
+myMap.set("last", "ramapure");
+myMap.set("age", 25);
+
+// console.log(myMap)
+
+// myMap.forEach((value, key) => {
+//   console.log(value, key);
+// });
+
+// for (const [key ,value] of myMap) {
+//     console.log(key,value)
+// }
+
+let mapArr = Array.from(myMap)
+console.log(mapArr)
+let obj = Object.fromEntries(mapArr)
+console.log(obj )
