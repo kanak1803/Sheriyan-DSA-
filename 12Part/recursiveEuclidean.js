@@ -1,13 +1,13 @@
 let a = 20,
   b = 32;
 
-function euclidean(a, b) {
+function euccliedean(a, b) {
   if (a == b) return a;
   if (a > b) {
-    return euclidean(a - b, b);
+    return euccliedean(a - b, b);
   } else {
-    return euclidean(a, b - a);
+    return euccliedean(a, b - a);
   }
 }
 
-console.log(euclidean(a, b));
+console.log(euccliedean(a, b));
