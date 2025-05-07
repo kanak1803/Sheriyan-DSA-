@@ -1,12 +1,12 @@
 
 
-function improveGCD(a,b){
+function imporveGCD(a,b){
     if(b ==0 ) return a
 
-    return improveGCD(b,a%b)
+    return imporveGCD(b,a%b)
 }
 
-console.log(improveGCD(16,14))
+console.log(imporveGCD(16,14))
 
 let a = 16,b=14
 
