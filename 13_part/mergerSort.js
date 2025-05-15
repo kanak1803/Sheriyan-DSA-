@@ -42,4 +42,5 @@ function divide(arr, first, last) {
 }
 let array = [8, 2, 1, 9, 5, 12, 4, 20];
 
-console.log(divide(array, 0, array.length - 1));
+divide(array, 0, array.length - 1);
+console.log(array);
