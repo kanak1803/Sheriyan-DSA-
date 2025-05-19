@@ -9,12 +9,16 @@ function partition(arr, first, last) {
 
     if (i < j) {
       // Swap arr[i] and arr[j]
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
     }
   }
 
   // Swap pivot with arr[j]
-  [arr[first], arr[j]] = [arr[j], arr[first]];
+  let temp = arr[j];
+  arr[j] = arr[first];
+  arr[first] = temp;
   return j; // Return the pivot index
 }
 
@@ -28,4 +32,4 @@ function quicksort(arr, first, last) {
 let array = [8, 2, 1, 9, 5, 12, 4, 20];
 
 quicksort(array, 0, array.length - 1);
-console.log(array); // Output: [1, 2, 4, 5, 8, 9, 12, 20]
+console.log(array);
