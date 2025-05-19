@@ -4,7 +4,7 @@ function conquor(arr, first, mid, last) {
   let j = mid + 1;
   let k = 0;
   while (i <= mid && j <= last) {
-    if (arr[i] > arr[j]) {
+    if (arr[i] < arr[j]) {
       temp[k] = arr[i];
       i++;
     } else {
